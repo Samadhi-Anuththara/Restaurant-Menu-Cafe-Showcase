@@ -15,7 +15,7 @@
         }
 
         body {
-            background: #c6c6c6;
+            background: #ffffff;
         }
 
         .navbar {
@@ -48,14 +48,89 @@
             transition: 0.3s;
         }
 
+        .text {
+            color: #ff9d00;
+        }
+
         .nav-links a:hover {
             color: #ff9d00;
         }
+
+        .back_body {
+            background: #e9e89e;
+            width: fit-content;
+            height: fit-content;
+
+        }
+
+        .line {
+            width: 50%;
+            color: #ff9d00;
+
+
+        }
+
+        .story-section {
+            background: #7c6b6b;
+            padding: 100px 20px;
+        }
+
+        .story-container h2 {
+            color: #e6c68b;
+        }
+
+        .story-container p {
+            color: #f5f0e8;
+        }
+
+        .food-policy {
+            position: relative;
+            width: 650px;
+            height: 500px;
+            border-radius: 35px;
+            overflow: hidden;
+            background: url("your-image.jpg") center center/cover no-repeat;
+        }
+
+        .food-policy::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.65);
+        }
+
+        .food-policy .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 85%;
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+        }
+
+        .food-policy .content h1 {
+            font-family: Georgia, serif;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .food-policy .content p {
+            font-family: Arial, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+      
+        
     </style>
 </head>
 
 <body>
-<!--nav bar-->
+    <!--nav bar-->
     <nav class="navbar">
         <div class="logo">
             <img src="logo.png" alt="TukTuk Logo">
@@ -71,7 +146,75 @@
 
         </ul>
     </nav>
-<h1>About Page</h1>
+    <br>
+    <center>
+        <h1>About</h1>
+    </center><br><br>
+    <center>
+        <hr class="line">
+    </center><br><br>
+    <center>
+        <p>Welcome to TukTuk, where we strive to offer not just good food, but also the finest entertainment in town.
+            Join
+            us for a memorable experience, indulge in delicious food, savor refreshing drinks, hit the dance floor, and
+            have
+            a blast! #HAPPYNEGOMBO</p>
+    </center>
+    <br><br>
+    <section class="story-section">
+        <div class="story-container">
+            <center>
+                <h2>Our Story</h2>
+            </center><br>
+            <center>
+                <p>
+                    Established in 2018, TukTuk Wine & Dine embodies the vibrant cultural tapestry of Negombo...
+                </p>
+
+                <p>
+                    The architectural design of TukTuk harmoniously merges contemporary rustic elements...
+                </p>
+
+                <p>
+                    At its core, TukTuk is a catalyst for growth, not only for emerging talents...
+                </p>
+
+                <p>
+                    With a steadfast commitment to fostering cultural vibrancy, TukTuk Wine & Dine stands...
+                </p>
+                </ </div>
+    </section>
+    <br><br>
+    <section class="food-policy">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Our Food Policy</h1>
+
+            <p>
+                A positive food safety culture has been nurtured within the
+                organization. TukTuk Negombo is committed to taking all
+                responsible steps, precautions, and exercising due diligence
+                to protect and preserve the human food chain in our care.
+            </p>
+        </div>
+    </section>
+    <pre>
+    <section class="food-policy">
+        <div class="overlay"></div>
+
+        <div class="content">
+            <h1>Our Course Value</h1>
+
+            <p>
+                A positive food safety culture has been nurtured within the
+                organization. TukTuk Negombo is committed to taking all
+                responsible steps, precautions, and exercising due diligence
+                to protect and preserve the human food chain in our care.
+            </p>
+        </div>
+    </section>
+</pre>
 </body>
 
 </html>
